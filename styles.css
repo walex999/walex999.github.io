@@ -54,7 +54,15 @@ section p{
     text-align:center;
     color:#444
 }
-section h2{
+h1{
+    text-align:center;
+    color:#444
+}
+h2{
+    text-align:center;
+    color:#444
+}
+li{
     text-align:center;
     color:#444
 }
