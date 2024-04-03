@@ -50,20 +50,10 @@ p a {
     color: #ff6600;
 }
 
-section p{
+.center{
     text-align:center;
-    color:#444
 }
-h1{
-    text-align:center;
-    color:#444
-}
-h2{
-    text-align:center;
-    color:#444
-}
-li{
-    text-align:center;
+.color{
     color:#444
 }
 
