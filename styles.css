@@ -1,27 +1,35 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FCF8ED;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #005A7A;
     padding: 10px 0;
     text-align: center;
+    border-end-end-radius: 100px;
+    border-end-start-radius: 100px;
+    margin-inline: 30%;
 }
 
 nav {
-    background-color: #444;
+    background-color: #005A7A;
     padding: 10px 0;
+    margin-inline: 100px;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
+    color: #FCF8ED;
     text-decoration: none;
     padding: 0 10px;
+    transition: underline 2s ease-in;
+}
+nav a:hover{
+    text-decoration: underline;
 }
 
 section {
@@ -54,32 +62,43 @@ p a {
     text-align:center;
 }
 .color{
-    color:#444
+    color:#293D2C
 }
 
 div.contact-card{
-    border-style:solid;
     border-radius: 15px;
-    background-color: #555;
     display: inline-flex; /* Use flexbox */
     justify-content: center; /* Center content horizontally */
     align-items:center; /* Center content vertically */
-    height: 300px; /* Make container take up full height of the viewport */
+    height: 200px; /* Make container take up full height of the viewport */
     width:200px;
     margin-inline: 10px;
+    transition: 0.2s;
+    border: solid;
+    border-color: #005A7A;
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+
 }
 
 div.contact-card:hover{
-    border-color: #ff6600;
+    border-color: #005A7A;
     cursor: pointer;
+    transform:scale(1.4);
+    position: relative;
+    z-index: 1;
+    
 }
 div.contact-card:hover h1{
-    color: #ff6600;    
+    color: #005A7A;    
 }
 
 div.contact-cards{
     margin:20px;
     text-align: center;
+    padding-top: 10%;
 }
 
 footer {
@@ -88,7 +107,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px; /* Height of the footer */
-    background-color: #333;
-    color: white;
+    background-color: #FCF8ED;
+    color: #293D2C;
     text-align: center;
 }
