@@ -101,6 +101,14 @@ div.contact-cards{
     padding-top: 10%;
 }
 
+.margin{
+    margin-inline: 10%;
+}
+.justified_padding{
+    padding-inline: 20%;
+    text-align: justify;
+}
+
 footer {
     position: fixed; /* Fixed positioning */
     left: 0;
