@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-i">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walex Portfolio - Home</title>
     <link rel="stylesheet" href="styles.css">
@@ -11,19 +11,69 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">My Projects</a>
-            <a href="socials.html">Socials</a>
+            <a href="#index">Home</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">My Projects</a>
+            <a href="#socials">Socials</a>
         </nav>
     </header>
-    <section class="center color">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello and welcome to my portfolio website! My name is Alexandre and here, you'll find a showcase of my skills, experiences, and projects.
-            Take a moment to explore my portfolio and get to know more about me and my work. If you have any questions, collaboration opportunities, 
-            or just want to say hello, feel free to <a href="socials.html">Contact Me</a>. 
-            Thank you for visiting, and I hope you enjoy your time here!</p>
-    </section>
+    <main id="index">
+        <div>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello and welcome to my portfolio website! My name is Alexandre and here, you'll find a showcase of my skills, experiences, and projects.
+                Take a moment to explore my portfolio and get to know more about me and my work. If you have any questions, collaboration opportunities, 
+                or just want to say hello, feel free to <a href="socials.html">Contact Me</a>. 
+                Thank you for visiting, and I hope you enjoy your time here
+            </p>
+        </div>
+
+        <div id="resume">
+            <h1>Professional experiences</h1>    
+                <h2>Evertrust</h2>
+                <p>
+                    Consulting with CAC40 companies, providing specialized experHse in Public Key Infrastructure (PKI) implementaHon and management. 
+                    NavigaHng enterprise infrastructure to build and run applicaHons properly.
+                </p>
+                <h2>Red Alert Labs</h2>
+                <p>
+                    EvaluaHon of FIDO vendor’s quesHonnaires, evaluaHon reports and impact analysis reports. Complete backend and frontend development of a portable applicaHon 
+                    used to speed up/automate the process of VQ evaluaHon. Research on AI automaHon. Risk assessment. InternaHonal context and English-speaking environment.
+                </p>
+            
+            <h1>Studies</h1>
+                <h2>Certifications | Continuous Learning</h2>
+                <p>
+                    Tryhackme (IntroducHon to Cyber Security, Pre-Security, Jr PenetraHon Tester), ForHnet (Intro to the Threat Landscape), UDEMY (Bash scripHng, PKI), GDPR, ANSSI.
+                </p>
+                <h2>CSULB</h2>
+                <p>
+                    Final semester in cyber security engineering. Studying Advanced Arificial Intelligence, Network & Informaion Security and Advanced Topics in Programming Languages.
+                </p>
+                <h2>ESILV | EMLV</h2>
+                <p>
+                    Double degree. Master of Engineering in Computer Science (Cyber Security & IoT) and master’s degree in markeing and negoiaion.
+
+                </p>
+
+
+        </div>
+
+        </div>
+
+        <div id="socials" class="contact-cards">
+            <div class="contact-card" onclick="redirect('https://github.com/walex999')">
+                <h1>Github</h1>
+            </div>
+            <div class="contact-card" onclick="redirect('https://behance.net/walex999')">
+                <h1>Behance</h1>
+            </div>
+            <div class="contact-card" onclick="redirect('https://www.linkedin.com/in/alexandre-sayada/')">
+                <h1>LinkedIn</h1>
+            </div>
+        </div>
+        
+    </main>
+    
     <footer>
         <p>&copy; 2024 Walex's Portfolio. All rights reserved.</p>
     </footer>
