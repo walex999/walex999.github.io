@@ -6,46 +6,42 @@ body {
     background-color: #FCF8ED;
 }
 
-header {
-    background-color: #005A7A;
-    padding: 10px 0;
-    text-align: center;
-    border-end-end-radius: 100px;
-    border-end-start-radius: 100px;
-    margin-inline: 30%;
-}
 
 nav {
     background-color: #005A7A;
     padding: 10px 0;
-    margin-inline: 100px;
+    top: 0px;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
     text-align: center;
+    position:fixed;
+    left:50vw;
+    transform: translateX(-50%);
+    flex-wrap: nowrap;
 }
 
 nav a {
     color: #FCF8ED;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 1vw;
     transition: underline 2s ease-in;
 }
 nav a:hover{
     text-decoration: underline;
 }
 
-section {
-    padding: 20px;
+main{
+    margin-top: 80px; /* Adjust the value to match the height of the fixed element */
+    padding-inline: 10vw;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+h1 {
+    color: #005A7A;
 }
-p a {
-    text-transform:capitalize;
-    font-weight: bold;
-}
+
 
 .links{
     color:black;
@@ -58,29 +54,31 @@ p a {
     color: #ff6600;
 }
 
-.center{
-    text-align:center;
+
+div.contact-cards{
+    margin:20px;
+    text-align: center;
+    padding-top: 10%;
+    display:flex;
+    justify-content: center ;
+    flex-wrap: wrap;
 }
-.color{
-    color:#293D2C
-}
+
 
 div.contact-card{
     border-radius: 15px;
-    display: inline-flex; /* Use flexbox */
-    justify-content: center; /* Center content horizontally */
+    display: flex;
     align-items:center; /* Center content vertically */
+    justify-content: center;
     height: 200px; /* Make container take up full height of the viewport */
     width:200px;
-    margin-inline: 10px;
+    margin: 10px;
     transition: 0.2s;
     border: solid;
     border-color: #005A7A;
 
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.8px);
-
 }
 
 div.contact-card:hover{
@@ -89,28 +87,14 @@ div.contact-card:hover{
     transform:scale(1.4);
     position: relative;
     z-index: 1;
-    
-}
-div.contact-card:hover h1{
-    color: #005A7A;    
 }
 
-div.contact-cards{
-    margin:20px;
-    text-align: center;
-    padding-top: 10%;
-}
-
-.margin{
-    margin-inline: 10%;
-}
-.justified_padding{
-    padding-inline: 20%;
-    text-align: justify;
+div.contact-card h1:hover {
+    position: relative; /* Ensure the h1 is positioned */
+    z-index: 3; /* Apply z-index to the h1 */
 }
 
 footer {
-    position: fixed; /* Fixed positioning */
     left: 0;
     bottom: 0;
     width: 100%;
