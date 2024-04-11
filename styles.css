@@ -27,10 +27,25 @@ nav a {
     color: #FCF8ED;
     text-decoration: none;
     padding: 0 1vw;
+    margin-inline: 1vw;
     transition: underline 2s ease-in;
 }
 nav a:hover{
     text-decoration: underline;
+}
+
+#welcome{
+    height: 15  vh;
+}
+
+#resume h1{
+    padding-block-start: 5vh;
+    padding-block-end: 1vh;
+}
+
+#socials{
+    padding-block-start: 5vh;
+    padding-block-end: 1vh;
 }
 
 main{
@@ -56,14 +71,11 @@ h1 {
 
 
 div.contact-cards{
-    margin:20px;
-    text-align: center;
-    padding-top: 10%;
     display:flex;
-    justify-content: center ;
+    justify-content: start ;
     flex-wrap: wrap;
 }
-
+ 
 
 div.contact-card{
     border-radius: 15px;
@@ -78,7 +90,7 @@ div.contact-card{
     border-color: #005A7A;
 
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 div.contact-card:hover{
@@ -89,10 +101,6 @@ div.contact-card:hover{
     z-index: 1;
 }
 
-div.contact-card h1:hover {
-    position: relative; /* Ensure the h1 is positioned */
-    z-index: 3; /* Apply z-index to the h1 */
-}
 
 footer {
     left: 0;

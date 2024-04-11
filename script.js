@@ -8,10 +8,19 @@ function scrollToSection(event) {
     const targetSection = document.querySelector(targetId); // Get the target section
     console.log(targetId,targetSection);
     if (targetSection) {
+        if (targetId =='#index'){
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+              });
+        }
         // Scroll to the target section with smooth behavior
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
+        else{
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     }
 }
 
@@ -19,3 +28,4 @@ function scrollToSection(event) {
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', scrollToSection);
 });
+
