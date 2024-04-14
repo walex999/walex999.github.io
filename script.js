@@ -6,7 +6,6 @@ function scrollToSection(event) {
     event.preventDefault(); // Prevent default link behavior
     const targetId = this.getAttribute('href'); // Get the target section id
     const targetSection = document.querySelector(targetId); // Get the target section
-    console.log(targetId,targetSection);
     if (targetSection) {
         if (targetId =='#index'){
             window.scrollTo({
@@ -24,8 +23,9 @@ function scrollToSection(event) {
     }
 }
 
-// Add event listeners to navbar links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', scrollToSection);
+document.addEventListener('DOMContentLoaded', function () {
+    // Add event listeners to navbar links
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
 });
-

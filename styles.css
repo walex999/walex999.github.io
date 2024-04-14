@@ -72,7 +72,7 @@ h1 {
 
 div.contact-cards{
     display:flex;
-    justify-content: start ;
+    justify-content: center ;
     flex-wrap: wrap;
 }
  
