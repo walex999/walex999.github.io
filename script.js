@@ -25,6 +25,7 @@ function scrollToSection(event) {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners to navbar links
+    console.log("Visit https://milairhu.com !")
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', scrollToSection);
     });
