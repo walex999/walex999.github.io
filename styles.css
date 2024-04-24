@@ -43,7 +43,7 @@ nav a:hover{
     height: 15  vh;
 }
 
-#resume h1{
+h1.title{
     padding-block-start: 5vh;
     padding-block-end: 1vh;
 }
